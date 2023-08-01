@@ -59,16 +59,16 @@
       <form>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-2">
-            <input type="text" class="form-control" placeholder="Nombres" required/>
+            <input type="text" name="nombres" id="nombres" class="form-control" placeholder="Nombres" required/>
           </div>
           <div class="col-md-4 mb-2">
-            <input type="text" class="form-control" placeholder="Apellidos" required/>
+            <input type="text" name="apellidos" id="apellidos" class="form-control" placeholder="Apellidos" required/>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-sm-4">
             <input
-              type="email"
+              type="email" name="correo" id="correo"
               class="form-control"
               id="inputEmail4"
               placeholder="Correo electrónico"
@@ -79,7 +79,7 @@
               <div class="input-group-prepend">
                 <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
               </div>
-              <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Nombre de usuario" aria-describedby="validationTooltipUsernamePrepend" required>
+              <input type="text" class="form-control" id="validationTooltipUsername" name="usuario" placeholder="Nombre de usuario" aria-describedby="validationTooltipUsernamePrepend" required>
               <div class="invalid-tooltip">
                 Please choose a unique and valid username.
               </div>
@@ -88,10 +88,10 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-md-4 mb-2">
-              <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña" required>
+              <input type="password" name="password" id="password" class="form-control" id="inputPassword" placeholder="Contraseña" required>
             </div>
             <div class="col-sm-4">
-              <input type="password" class="form-control" id="inputPassword" placeholder="Confirma tu contraseña" required>
+              <input type="password" name="confirm" id="confirm" class="form-control" id="inputPassword" placeholder="Confirma tu contraseña" required>
             </div>
         </div>
 
@@ -107,21 +107,21 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-sm-8 mb-2">
-          <input type="date" class="form-control" id="fechaNacimiento">
+          <input type="date" name="date" class="form-control" id="fechaNacimiento">
         </div>
       </div>
         
         <div class="row justify-content-center">
           <div class="col-sm-8">
-            <textarea class="form-control mb-2" id="exampleFormControlTextarea1" rows="3" placeholder="Descripcion de tu perfil"></textarea>
+            <textarea class="form-control mb-2" name="description" id="exampleFormControlTextarea1" rows="3" placeholder="Descripcion de tu perfil"></textarea>
           </div>
         </div>
         <br>
         <div class="row justify-content-center">
           <div class="col-sm-5">
-            <input type="checkbox" class="custom-control-input mb-2" id="customCheck1">
+            <input type="checkbox"  name="checkbox" class="custom-control-input mb-2" id="customCheck1">
             <label class="custom-control-label cmb-2" for="customCheck1" required>Declaro que es mi información</label><br>
-            <button class="btn btn-primary col-sm-4 mb-2" type="submit">Enviar</button>
+            <button class="btn btn-primary col-sm-4 mb-2" name="submit" id="submit" type="submit">Enviar</button>
           </div>
         </div>
       </form>
