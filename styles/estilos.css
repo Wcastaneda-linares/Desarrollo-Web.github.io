@@ -5,6 +5,10 @@ body {
   font-family: Arial, sans-serif;
 }
 
+  .white-text {
+    color: white;
+  }
+
 /* Estilos del header */
 header {
   color: #fff;
